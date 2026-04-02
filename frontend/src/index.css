@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-ink-950: #07111f;
+  --color-ink-900: #102036;
+  --color-ink-800: #1f3350;
+  --color-cream-50: #f8f5ef;
+  --color-cyan-400: #31d0dc;
+  --color-lime-300: #bef264;
+  --color-amber-300: #fcd34d;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: #e5edf7;
+  background:
+    radial-gradient(circle at top left, rgba(49, 208, 220, 0.18), transparent 25%),
+    radial-gradient(circle at top right, rgba(190, 242, 100, 0.12), transparent 20%),
+    linear-gradient(180deg, #07111f 0%, #0f1d32 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glass-card {
+  background: rgba(15, 29, 50, 0.8);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.35);
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
